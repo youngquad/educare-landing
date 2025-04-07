@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educare MVP | Hypothesis Validation & Student Engagement</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4A6FA5;
+            --secondary: #FF6B6B;
+            --dark: #333;
+            --light: #f9f9f9;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+        }
+        .hero {
+            background: linear-gradient(rgba(74, 111, 165, 0.8), rgba(74, 111, 165, 0.8)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        .btn {
+            background: var(--secondary);
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .hypothesis-section {
+            padding: 4rem 5%;
+            text-align: center;
+        }
+        .hypothesis-section h2 {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: var(--primary);
+        }
+        .hypothesis-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            text-align: left;
+        }
+        .hypothesis-card {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .hypothesis-card h3 {
+            color: var(--primary);
+        }
+        .results-section {
+            background: var(--primary);
+            color: white;
+            padding: 4rem 5%;
+            text-align: center;
+        }
+        .results-section h2 {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .result-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+        .mvp-section {
+            padding: 4rem 5%;
+            text-align: center;
+        }
+        .mvp-section h2 {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: var(--primary);
+        }
+        .mvp-features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        .mvp-feature {
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .cta {
+            padding: 4rem 5%;
+            text-align: center;
+            background: var(--light);
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 5%;
+        }
+        @media (max-width: 768px) {
+            .hypothesis-grid, .results-grid, .mvp-features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Educare MVP</div>
+        <nav>
+            <a href="#hypothesis">Hypotheses</a>
+            <a href="#results">Validation</a>
+            <a href="#mvp">MVP Features</a>
+            <a href="#cta">Join Beta</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Validating the Future of Student Engagement</h1>
+        <p>Testing key hypotheses to build an MVP that improves university retention, mental health, and networking for students.</p>
+        <a href="#cta" class="btn">Join the Beta Test</a>
+    </section>
+
+    <section id="hypothesis" class="hypothesis-section">
+        <h2>Key Hypotheses We're Testing</h2>
+        <div class="hypothesis-grid">
+            <div class="hypothesis-card">
+                <h3>Client Hypothesis</h3>
+                <p>Early adopters are current university students who need better engagement tools.</p>
+                <p><strong>Validation Method:</strong> Surveys + free trial uptake analysis.</p>
+            </div>
+            <div class="hypothesis-card">
+                <h3>Behavior Hypothesis</h3>
+                <p>Introverted students prefer app-based networking over physical events.</p>
+                <p><strong>Validation Method:</strong> App usage vs. event attendance metrics.</p>
+            </div>
+            <div class="hypothesis-card">
+                <h3>Retention Hypothesis</h3>
+                <p>Mental health tracking improves student retention by 15%.</p>
+                <p><strong>Validation Method:</strong> Mood tracker engagement → dropout rates.</p>
+            </div>
+            <div class="hypothesis-card">
+                <h3>Monetization Hypothesis</h3>
+                <p>Subscription model works better for international students.</p>
+                <p><strong>Validation Method:</strong> Tiered pricing A/B tests.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="results" class="results-section">
+        <h2>Preliminary Validation Results</h2>
+        <div class="results-grid">
+            <div class="result-item">
+                <h3>Validated ✔️</h3>
+                <p>Students use Educare to connect with peers (especially international students).</p>
+            </div>
+            <div class="result-item">
+                <h3>Invalidated ❌</h3>
+                <p>Some prefer face-to-face networking (catfishing concerns).</p>
+            </div>
+            <div class="result-item">
+                <h3>Success Metric</h3>
+                <p>20% download rate target in pilot universities.</p>
+            </div>
+            <div class="result-item">
+                <h3>Adjustment Needed</h3>
+                <p>Loyalty programs to compete with existing apps.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mvp" class="mvp-section">
+        <h2>MVP Core Features</h2>
+        <div class="mvp-features">
+            <div class="mvp-feature">
+                <h3>Student Matching</h3>
+                <p>Algorithm to connect students with similar interests.</p>
+            </div>
+            <div class="mvp-feature">
+                <h3>Mood Tracker</h3>
+                <p>Daily mental health check-ins with resources.</p>
+            </div>
+            <div class="mvp-feature">
+                <h3>Feedback Surveys</h3>
+                <p>Real-time lecture feedback for universities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="cta">
+        <h2>Help Shape Educare’s Future</h2>
+        <p>Join our beta program to test the MVP and get early access.</p>
+        <a href="#" class="btn">Sign Up for Beta</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Educare MVP. Hypothesis-driven development for UK universities.</p>
+    </footer>
+</body>
+</html>
